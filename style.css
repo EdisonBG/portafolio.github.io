@@ -40,6 +40,8 @@ body {
 
 ol, ul,li {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 a{
     text-decoration: none;
@@ -221,7 +223,7 @@ https://en.bem.info/methodology/quick-start/*/
     padding: 64px;
     gap: 10px;
 
-    width: 1440px;
+    width: 100%;
     height: 383px;
 
     background-color: var(--sobre-mi-fondo);
@@ -273,7 +275,7 @@ https://en.bem.info/methodology/quick-start/*/
     padding: 0px;
     gap: 88px;
 
-    width: 1440px;
+    width: 100%;
     height: 415px;
 
     flex: none;
@@ -285,6 +287,7 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     padding: 0px;
     gap: 32px;
 
@@ -355,13 +358,91 @@ https://en.bem.info/methodology/quick-start/*/
 }
 /*Sección Hobbies*/
 
-section.hobbies{
-    order:4;
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 88px;
+
+    width: 100%;
+    height: 415px;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.hobbies__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1136px;
+    height: 244px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hobbies__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hobbies__line{
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 1136px;
+    height: 174px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.hobbies__box{
+    background-color: var(--color-box);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+
+    width: 176px;
+    height: 174px;
+
+    flex: none;
+    flex-grow: 0;
 }
 
 .hobbies__img{
-    width: 32px;
-    height: 37px;
+    line-height: 37px;
+}
+
+.hobbies__name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    flex: none;
+    flex-grow: 0;
 }
 
 
