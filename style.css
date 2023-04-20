@@ -20,6 +20,22 @@ body {
     padding: 0;
     line-height: 1;
 }
+
+.tudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+    position: absolute;
+    height: 5020px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    color: var(--cor-de-letra);
+}
+
+
 ol, ul,li {
     list-style: none;
 }
@@ -27,6 +43,8 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
+
+
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
@@ -44,24 +62,152 @@ https://en.bem.info/methodology/quick-start/*/
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 611px;
+    width: 1136px;
+    height: 88px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 134px;
+    height: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
 }
 
 .menu__list{
     display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 653px;
+    height: 19px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
 }
 
 .menu__list__item{
-    align-self: ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
 }
 
+.menu__list__item__contato{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 
-
+    flex: none;
+    flex-grow: 0;
+}
 
 /*Sección Title*/
 
 .title__div{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 208px;
+
+    width: 1136px;
+    height: 368px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.title__profile{
+    width: 368px;
+    height: 368px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 751px;
+    height: 246px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.title__bio{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title__subsection{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 467px;
+    height: 24px;
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.title__network__item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
+    flex-grow: 0;
 }
 
 /*Sección About*/
